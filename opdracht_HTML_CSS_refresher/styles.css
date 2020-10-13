@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:minmax(100px,auto);
+    column-gap: 20px;
+
+}
+.card{
+    border: 1px solid lightsteelblue;
+    border-radius: 10px;
+    vertical-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.img_1,.img_2{
+    
+    float: right;
+
+}
+.btn-group button {
+    background-color: white;
+    border: 2px solid;
+    border-image: conic-gradient( red, limegreen)1;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    float: left; 
+    text-align: center;
+    border-radius: 2px;
+    
+}
+  .btn-group button:not(:last-child) {
+    border-right: none; 
+  }
+  
+  
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .btn-group button:hover {
+    background-color: lightsteelblue;
+  }
+
+
+
+
+
+
+
